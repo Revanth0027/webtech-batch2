@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+}
+.header{
+    text-align: center;
+    color: white;
+
+ 
+    background-color: blue;
+    padding: 10px;
+}
+.image{
+    width:100%;
+    height: 700px;
+    background-image: url("https://www.karunya.edu/sites/default/files/img/images/karunya-campus-view.jpg.pagespeed.ce.IyizWonRVf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.aboutus{
+    text-align: justify;
+    background-color:lightsalmon
+    ;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.aboutus .title{
+    text-align: center;
+    color:black;
+
+}
+.content{
+    text-align: justify;
+
+}
+.img1{
+    width: 33.3%;
+    height: 300px;
+    background-image: url("cse.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    
+}
+.img2{
+    width: 33.3%;
+    height: 300px;
+    background-image: url("pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    
+}
+.img3{
+    width: 33.4%;
+    height: 300px;
+    background-image: url("https://images.shiksha.com/mediadata/images/1582625051phpkinSIY_205x160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    
+}
+.img1 .box1{
+    text-align: center;
+    color:white;
+    background-color: black;
+    opacity: 0.5;
+   
+   
+    
+    
+}
+.img1 .box1:hover{
+    opacity:1;
+    background-color: brown;
+}
+.img2 .box2{
+
+    text-align:center;
+    color:white;
+    background-color: black;
+    opacity: 0.7;
+    bottom: -450px;
+   
+    left: 505px;
+    position:absolute;
+    width: 33.3%;
+    
+    
+    
+    
+}
+
+.img3 .box3{
+    text-align: center;
+    color:white;
+    background-color: black;
+    opacity: 0.5;
+    
+}
+.pic1{
+    width: 50%;
+    height: 300px;
+    background-image: url("COFFEE.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.campus{
+    text-align: justify;
+    width: 50%;
+    height: 250px;
+    background-color:lightsalmon;
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+    
+}
+.pic{
+    width: 50%;
+    height: 250px;
+   
+    background-image: url(https://karunya.edu/sites/default/files/img/site/campus-life/front-campus-life-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    box-sizing: border-box;
+    
+
+}
+
+
+    
+
+.gt{
+    text-align: justify;
+    width: 50%;
+    height: 350px;
+    background-color:lightsalmon;
+    padding: 50px;
+    
+    box-sizing: border-box;
+    float: left;
+  
+}
+
+.pic2{
+    width: 50%;
+    height: 350px;
+    background-image: url("pexels-pixmike-413195.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    float: left;
+    box-sizing: border-box;
+    
+    
+
+}
+.pic2 form{
+
+    background-color: antiquewhite;
+    width: 70%;
+    margin-left: 15%;
+    padding: 5px;
+}
+
+.pic2 form h4{
+    font-size: 25px;
+    text-align: center;
+
+}
+.pic2 form input{
+    width: 95%;
+    height: 30px;
+    margin-left: 5px;
+    background-color:gray;
+    
+    border-radius: 5px;
+    border: none;
+   
+
+}
+
+.pic2 form input::placeholder{
+    opacity: 1;
+    color: black;
+}
+
+.pic2 form input:focus{
+    outline: 2px solid rgb(21, 0, 255);
+    background: none;
+}
+
+.pic2 form button{
+    margin: 5px;
+    width: 98%;
+    height: 30px;
+    background-color: rgb(30, 30, 202);
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+
+
+
+
+    
+    
+
