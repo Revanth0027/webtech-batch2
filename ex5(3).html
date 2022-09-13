@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function convert(){
+            var amount=document.getElementById('amount').value;
+            var from=document.getElementById('from').value;
+            var to=document.getElementById('to').value;
+            var result=" ";
+            switch(from){
+                case "USD":
+
+                    switch(to){
+                        case "USD": result ="$:"+amount;break;
+
+                        case "INR":result="Rupee:"+amount*79.64;break;
+                                     
+                        case "UAE": result ="$:"+amount*3.6;break;
+
+                        case "AD":result="Aus D:"+amount*1.46;break;
+
+                        case "SLR":result="SL Rupee:"+amount*362.08;break;
+
+
+
+                    }
+                    break;
+                    case "INR":
+
+                    switch(to){
+
+                        case "INR":result="Rupee:"+amount;break;
+
+                        case "USD": result ="$:"+amount/79.91;break;
+
+                        case "UAE": result ="dihram:"+amount/27.76;break;
+
+                        case "AD":result="Aus D:"+amount/53.79;break;
+
+                        case "SLR":result="SL Rupee:"+amount*4.56;break;
+
+                    }
+                    break;
+                    case "UAE":
+                        switch(to){
+                            case "UAE":result="dihram:"+amount;break;
+
+                            case "USD": result ="$:"+amount/3.6;break;
+
+                            case "INR": result ="rupee:"+amount*21.68;break;
+
+                            case "AD":result="Aus D:"+amount/2.51;break;
+
+                            case "SLR":result="SL Rupee:"+amount*98.58;break;
+                        }
+                        break;
+                        case "AD":
+                            switch(to){
+                                case "AD":result="Aus D:"+amount;break;
+                                case "INR":result="Rupee:"+amount*53.79 ;break;
+                                case "USD":result="$:"+amount/0.68;break; 
+                                case "UAE":result="dihram:"+amount*2.51;break;
+                                case "SLR":result="SL Rupee:"+amount*249.52;break;
+                            }
+                            break;
+                        case "SLR":
+                            switch(to){
+                                case "SLR": result ="SLRupee:"+amount;break;
+                                case "INR": result ="Rupee:"+amount/4.56;break;
+                                case "USD": result="$:"+amount/362.08;break;
+                                case "AD": result="Aus D:"+amount/249.52;break;
+                                case "UAE": result="dihram:"+amount/98.58;break;
+
+                            }
+            }
+            document.getElementById('result').innerHTML=result;
+
+        }
+    </script>
+    
+</head>
+<body style="border:black solid 5px; margin:190px; padding: 20px;">
+    <h2 style="color:blue; font-size:30px; text-align: center;">CURRENCY CONVERTER</h2>
+    <label style="color:blue">Amount:</label><br><br>
+    
+    <input type="text" id="amount" onkeyup="convert()"><br><br>
+    <label style="color:blue">from:</label><br><br>
+    <select id="from" onchange="convert()">
+        <option>USD</option>
+        <option>INR</option>
+        <option>UAE</option>
+        <option>AD</option>
+        <option>SLR</option>
+    </select><br><br>
+
+    <label style="color:blue">To:</label><br><br>
+    <select id="to" onchange="convert()">
+        <option>USD</option>
+        <option>INR</option>
+        <option>UAE</option>
+        <option>AD</option>
+        <option>SLR</option>
+    </select>
+    <br><br>
+    <div id="result" style="color:white; font-size:20px; background-color: blue; text-align: center; padding-top: 2px; padding-bottom: 2px; "></div>
+    
+    
+</body>
+</html>
