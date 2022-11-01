@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var timer=null;
+            var element=null;
+            var element1 = null;
+function init(){
+    element = document.getElementById('box');
+    element.style.position = 'relative';
+    element.style.left = '5px';
+}
+function start(){
+    element.style.left = parseInt(element.style.left)+5+"px";
+    if(parseInt(element.style.left) >= 1200){
+        document.getElementById('danger').style.display="block";
+        clearTimeout(timer);
+    }
+    else{    
+       timer = setTimeout(start,100);
+    }
+}
+function stop(){
+    clearTimeout(timer);
+}
+ 
+function reset(){
+    init();
+    clearTimeout(timer);
+    document.getElementById('danger').style.display="none";
+}
+        </script>
+        
+
+
+
+
+        
+    </head>
+    <body onload="init()">
+         <div id="box" style="width:200px;height: 100px; float:left;">
+            <img src="game.png" width="200" height="150">
+            
+            
+        </div>
+        <div id="box1" style="margin-left: 1400px; color: blue ;height :400px; background-color: blue;" >hi
+            
+        </div>  
+        <div width="200" height="150"></div>   
+        
+        
+        <div id="danger" style="display:none;position: absolute; top:300px;left:1300px;color:white;background-color: red;width:50px;height: 50px;">
+            
+            Danger
+        </div>
+
+        <br><br>
+        <div id="value" style="background-color:blue;padding-left: 400px;"></div>
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">reset</button>       
+    </body>
+</html>
