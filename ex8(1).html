@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("control1", function ($scope) {
+            $scope.add = function () {
+                var n = parseInt($scope.n);
+                var n1 = parseInt($scope.n1);
+                var n2 = parseInt($scope.n2);
+                var n3 = parseInt($scope.n3);
+                var n4 = parseInt($scope.n4);
+                $scope.view1 = n*(n1/100);
+                $scope.view2 = n*(n2/100);
+                $scope.view3 = n*(n3/100);
+                $scope.view4 = n*(n4/100);
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="control1" class="b">
+    <div class="d1">Budget Calculator App</div>
+    <br>
+    <p>Enter Amount that you want to Manage</p>
+    <br>
+    <input class="i" type="text" ng-model="n">
+    <br>
+    <br>
+    <p>How would you like to divide your money?</p>
+    <br>
+    <div>
+        <div class="d2">Room Rent(%):<input class="i" type="text" ng-model="n1"></div>
+        <div class="d3">Accessories(%):<input class="i" type="text" ng-model="n2"></div>
+        <div class="d4">Emergency(%):<input class="i" type="text" ng-model="n3"></div>
+        <div class="d5">Saving(%):<input class="i" type="text" ng-model="n4"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button class="d11" ng-click="add()">Evaluate My Money</button>
+    <br>
+    <br>
+    <br>
+    <div class="d10">
+            <div class="d6">Room Rent <br> {{view1}}</div>
+            <div class="d7">Accessories <br> {{view2}}</div>
+            <div class="d8">Emergency <br> {{view3}}</div>
+            <div class="d9">Saving <br> {{view4}}</div>
+    </div>
+</body>
+
+</html>
