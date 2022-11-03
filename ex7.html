@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+$('#b').click(function () {
+var a = parseInt($('#i1').val());
+var b = parseInt($('#i2').val());
+var c = parseInt($('#i3').val());
+var d = parseInt($('#i4').val());
+var o = (a * 300) + (b * 200) + (c * 250) + (d * 350);
+$('#d5').html("<div class='d6'>Purchase Order Bill!!</div><br><div class='d7'>Total price</div><div class='d8'> Rs. " + o + "</div>");
+})
+})
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="d">
+<h1>CAKE SHOP</h1>
+</div>
+<br>
+<div class="d1">
+<img src="cake1.jpeg"alt="Error" width="300px" height="300px">
+<br>
+Color Cake-Rs. 300
+</div>
+<div class="d2">
+<img src="cake2.jpeg" alt="Error" width="300px" height="300px">
+<br>Brown Cake-Rs. 200
+</div>
+<div class="d3">
+<img src="cake3.jpeg" alt="Error" width="300px" height="300px">
+<br>Milky Cake-Rs. 250
+</div>
+<div class="d4">
+<img src="cake4.jpeg"alt="" width="300px" height="300px">
+<br>Black Forest Cake-Rs. 350
+</div>
+<div class="d9">
+<h3>Order Cake</h3>
+</div>
+<br>
+<br>
+<div class="d10">
+<b class="t">Color Cake(Quantity)</b><br>
+<input type="text" id="i1"><br><br>
+<b class="t">Brown Cake(Quantity)</b><br>
+<input type="text" id="i2"><br><br>
+<b class="t">Milky Cake(Quantity)</b><br>
+<input type="text" id="i3"><br><br>
+<b class="t">Black Forest Cake(Quantity)</b><br>
+<input type="text" id="i4"><br><br>
+<button id="b" class="b">Place Order</button>
+<br>
+<br>
+</div>
+<div id="d5" class="d5"></div>
+</body>
+</html>

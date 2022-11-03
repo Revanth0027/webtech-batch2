@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    }
+    
+    .d{
+    text-align: center;
+    background-color: red;
+    color: white;
+    }
+    
+    .d1{
+    width: 25%;
+    float: left;
+    text-align: center;
+    }
+    
+    .d2{
+    width: 25%;
+    float: left;
+    text-align: center;
+    }
+    
+    .d3{
+    width: 25%;
+    float: left;
+    text-align: center;
+    
+    }
+    
+    .d4{
+    width: 25%;
+    float: left;
+    text-align: center;
+    }
+    
+    .d5{
+    position:relative;
+    left: 20%;
+    border-top: 3px solid blue;
+    text-align: center;
+    width: 870px;
+    }
+    
+    .d6{
+    background-color: white;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    }
+    
+    .d7{
+    background-color: green;
+    color: white;
+    font-size: 40px;
+    float: left;
+    width: 50%;
+    }
+    
+    .d8{
+    color:red;
+    font-size: 40px;
+    float: right;
+    width: 50%;
+    }
+    
+    .d9{
+    color: blue;
+    position: relative;
+    top: 25px;
+    left: 40%;
+    font-size: 40px;
+    }
+    .d10{
+    color: blue;
+    font-size: 20px;
+    position: relative;
+    left: 20%;
+    }
+    .d10 input{
+    width: 60%;
+    height: 40px;
+    }
+    .b{
+    background-color: blue;
+    color: white;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    width: 40%;
+    height: 40px;
+    }
+    
