@@ -7,14 +7,14 @@
 <title>Sign Up</title>
 </head>
 <body>
-<form action="/server" method="POST">
-    Name: <input type="text"name="name"><br><br>
-    Password: <input type="password"name="pass"><br><br>
-    Age:<input type="number"name="age"><br><br>
-    Mobile Number:<input type="tel"name="mobile"><br><br>
-    Email:<input type="email"name="email"><br><br>
-    Gender:<input type="radio"name="gender"value="male">Male
-    <input type="radio"name="gender"value="female">Female <br><br>
+<form action="/signup" method="post">
+    Name: <input type="text" name="name"><br><br>
+    Password: <input type="password" name="pass"><br><br>
+    Age:<input type="number" name="age"><br><br>
+    Mobile Number:<input type="tel" name="mobile"><br><br>
+    Email:<input type="email" name="email"><br><br>
+    Gender:<input type="radio" name="gender"value="male">Male
+    <input type="radio" name="gender"value="female">Female <br><br>
     State:<select name="state">
         <option>Tamilnadu</option>
         <option>Maharashtra</option>
@@ -22,12 +22,11 @@
         <option>Kerla</option>
     </select>
     <br><br>
-    Skills:<input type="checkbox"name="skills"value="Java Script">Java Script
+    Skills:<input type="checkbox" name="skills"value="Java Script">Java Script
     <input type="checkbox"name="skills"value="Python">Python
     <input type="checkbox"name="skills"value="C++">C++
     <input type="checkbox"name="skills"value="Java">Java
     <br><br>
-
 
 <button type="submit">Sign Up</button>
 </form>
